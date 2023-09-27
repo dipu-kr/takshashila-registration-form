@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------font icons cdn-------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- -----------------custome css----------- -->
+    <link rel="stylesheet" href="/styles.css">
+    <!-- ------------------google fonts cdn--------------- -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+     <!-- -----------------tailwind cdn------------ -->
+
+    <title>Takshashila Form</title>
+</head>
+<body>
+  <main class="main_conatiner">
+    <!-- ----------------------------------------------header part---------------------------------------- -->
+    <div class="navbar_container">
+        <div class="w-[100px] h-[100px] logo_div">
+              <img src="./images/logo-1.png" alt="" >
+        </div>
+       
+       <div class="navbar_content_container">
+        <div class="logo_content">
+            <h1>Takshashila</h1>
+            <h6>school of civil service</h6>
+            <p>future of north east in civil services</p>
+            <p>
+                <span>estd-2022</span>
+                <span>iso 9001:2015 &</span>
+                <span>iso 29990:2010</span></p>
+        </div>
+        <div class="address_content">
+            <div class="address_content_div">
+                <span><i class="fa-solid fa-location-dot"></i></i></span>
+                <div class="address_div">
+                    <p>6B & C, unique avenue, 6th Floor,</p>
+                    <p>super market, gs road, guwahati - 781006</p>
+                </div>
+            </div>
+            <div class="address_content_div">
+                <span><i class="fa-sharp fa-solid fa-phone-volume"></i></span>
+                <p class="toll_free">Toll Free 1800-212-4490</p>
+            </div>
+            <div class="address_content_div">
+                <span><i class="fa-solid fa-envelope"></i></i></i></span>
+                <p class="toll_free">info@takshashilascs.in</p>
+            </div>
+        </div>
+       </div>
+    </div>
+<!-- ---------------------------------header part ended--------------------------------- -->
+<div class="form_container">
+    <form>
+    <h1 class="form_heading">Registration Form</h1>
+    <div class="basic_details_container">
+        <div class="basic_input_div">
+            <label>Name</label>
+            <input type="text" placeholder="Full Name..." />
+        </div>
+        <div class="basic_input_div" >
+            <label>Father's Name</label>
+            <input type="text" placeholder="Father's Name..."/>
+        </div>
+        <div class="basic_input_div">
+            <label>Mother's Name</label>
+            <input type="text" placeholder="Mother's Name..."/>
+        </div>
+        <div class="basic_input_div">
+            <label>Date of Birth</label>
+            <input type="date"/>
+        </div>
+        <div class="basic_input_div">
+            <label>Mobile No.</label>
+            <input type="text" placeholder="Phone Number..."/>
+        </div>
+        <div class="basic_input_div">
+            <label>Email</label>
+            <input type="email" placeholder="Email..."/>
+        </div>
+        <div class="basic_input_div">
+            <label>Present Address</label>
+            <textarea placeholder="Permanent address..." rows="4" cols="50"></textarea>
+        </div>
+        <div class="basic_input_div">
+            <label>Permanent Address</label>
+            <textarea placeholder="Permanent address..."  rows="4" cols="50"></textarea>
+        </div>
+    </div>
+    <!-- -----------------------dynamic form------------------------ -->
+    <div class="dynamic_form_container">
+         <h6 class="dynamic_form_heading">Education Details</h6>
+         <div  id="form-fields" >
+            <!-- ----------s -->
+            <div class="qualifiaction-head" >
+                <h6 class="qualifiaction">10th Qualification required*</h6>
+            </div>
+            <div class="dynamic_form_div">
+             <div class="dynamic_input_div">
+                <label for="select-option">Select an Option:</label>
+               <select id="select-option">
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                     <option value="Graduation">Graduation</option>
+                     <option value="Post Graduation">Post Graduatiob</option>
+                     <option value="Any Other">Any Other</option>
+               </select>
+            </div>
+                   <div class="dynamic_input_div">
+                      <label>Name of School/College</label>
+                      <input type="text" placeholder="School Name..."/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Board Name</label>
+                      <input type="text" placeholder="Board Name..."/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Subjects Name</label>
+                         <input type="text" placeholder="Subjects Name..."/>
+                    </div>
+                    <div class="dynamic_input_div">
+                      <label>Total Marks</label>
+                      <input type="number" placeholder="Total Marks..."/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Obtained Marks</label>
+                      <input type="number" placeholder="Obtained Marks..."/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Passing Year</label>
+                         <input type="text" placeholder="Passing Year..."/>
+                    </div>
+           </div>
+           <!-- ----------------------------------------------- -->
+           <div class="qualifiaction-head" >
+                <h6 class="qualifiaction">12th Qualification required*</h6>
+            </div>
+           <div class="dynamic_form_div">
+             <div class="dynamic_input_div">
+                <label for="select-option">Select an Option:</label>
+               <select id="select-option">
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                     <option value="Graduation">Graduation</option>
+                     <option value="Post Graduation">Post Graduatiob</option>
+                     <option value="Any Other">Any Other</option>
+               </select>
+            </div>
+                   <div class="dynamic_input_div">
+                      <label>Name of School/College</label>
+                      <input type="text" placeholder="School Name..."/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Board Name</label>
+                      <input type="text" placeholder="Board Name..."/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Subjects Name</label>
+                         <input type="text" placeholder="Subjects Name..."/>
+                    </div>
+                    <div class="dynamic_input_div">
+                      <label>Total Marks</label>
+                      <input type="number" placeholder="Total Marks..."/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Obtained Marks</label>
+                      <input type="number" placeholder="Obtained Marks..."/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Passing Year</label>
+                         <input type="text" placeholder="Passing Year..."/>
+                    </div>
+           </div>
+           <!-- -------------------------------------------------------- -->
+           <div class="qualifiaction-head" >
+                <h6 class="qualifiaction">Graduation Qualification required*</h6>
+            </div>
+           <div class="dynamic_form_div">
+             <div class="dynamic_input_div">
+                <label for="select-option">Select an Option:</label>
+               <select id="select-option">
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                     <option value="Graduation">Graduation</option>
+                     <option value="Post Graduation">Post Graduatiob</option>
+                     <option value="Any Other">Any Other</option>
+               </select>
+            </div>
+                   <div class="dynamic_input_div">
+                      <label>Name of School/College</label>
+                      <input type="text" placeholder="School Name..."/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Board Name</label>
+                      <input type="text" placeholder="Board Name..."/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Subjects Name</label>
+                         <input type="text" placeholder="Subjects Name..."/>
+                    </div>
+                    <div class="dynamic_input_div">
+                      <label>Total Marks</label>
+                      <input type="number" placeholder="Total Marks..."/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Obtained Marks</label>
+                      <input type="number" placeholder="Obtained Marks..."/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Passing Year</label>
+                         <input type="text" placeholder="Passing Year..."/>
+                    </div>
+           </div>
+           <!-- ------------------------------------------------------------ -->
+           <div class="qualifiaction-head" >
+                <h6 class="qualifiaction">Optional field*</h6>
+            </div>
+           <div class="dynamic_form_div">
+             <div class="dynamic_input_div">
+                <label for="select-option">Select an Option:</label>
+               <select id="select-option">
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                     <option value="Graduation">Graduation</option>
+                     <option value="Post Graduation">Post Graduatiob</option>
+                     <option value="Any Other">Any Other</option>
+               </select>
+            </div>
+                   <div class="dynamic_input_div">
+                      <label>Name of School/College</label>
+                      <input type="text" placeholder="School Name..."/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Board Name</label>
+                      <input type="text" placeholder="Board Name..."/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Subjects Name</label>
+                         <input type="text" placeholder="Subjects Name..."/>
+                    </div>
+                    <div class="dynamic_input_div">
+                      <label>Total Marks</label>
+                      <input type="number" placeholder="Total Marks..."/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Obtained Marks</label>
+                      <input type="number" placeholder="Obtained Marks..."/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Passing Year</label>
+                         <input type="text" placeholder="Passing Year..."/>
+                    </div>
+           </div>
+         </div>
+    </div>
+    <!-- -------------------------------------dynamic form ended------------------------------ -->
+    <div class="course_applied_container">
+        <div class="course_select_div">
+              <label for="select-option">Course Applied for</label>
+               <select id="select-option" class="select_tag">
+                    <option value="10th">One year course</option>
+                    <option value="12th">Three year course</option>
+               </select>
+        </div>
+        <!-- <button type="button" id="add-field-button" class="add_form_btn">Add</button> -->
+    </div>
+    
+    <div class="px-8 text-center pt-4">
+        <Button type="submit" class="submit_btn">Submit</Button>
+    </div>
+    </form>
+</div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
